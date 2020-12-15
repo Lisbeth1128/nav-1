@@ -1,0 +1,176 @@
+/** css reset **/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+/** 引入iconfont **/
+
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+/** 正式代码 **/
+
+.globalHeader {
+  margin-top: 50px;
+  padding-left: 25px;
+}
+
+@media (min-width: 500px) {
+  .globalHeader {
+    display: flex;
+    justify-content: center;
+  }
+  .searchForm {
+    margin-top: 200px;
+  }
+}
+.searchForm {
+}
+
+.globalHeader > .searchForm > input {
+  border: 1px solid #eee;
+  width: 240px;
+  min-height: 25px;
+  margin-right: 10px;
+  border-radius: 4px;
+  outline-color: #009f98;
+  padding-left: 10px;
+}
+
+.globalHeader > .searchForm > input:hover {
+  border-color: #a7aab6;
+}
+
+@media (min-width: 500px) {
+  .globalHeader > .searchForm > input {
+    min-width: 400px;
+    min-height: 36px;
+  }
+
+  .globalHeader > .searchForm > button {
+    width: 48px;
+    height: 36px;
+    font-size: 16px;
+  }
+}
+
+.globalHeader > .searchForm > button {
+  border: 1px solid #eee;
+  background: #009f98;
+  min-width: 35px;
+  min-height: 25px;
+  border-radius: 4px;
+  color: white;
+  outline: none;
+}
+
+.globalHeader > .searchForm > button:hover {
+  background-color: #009d80;
+}
+
+.globalMain > div {
+  margin-top: 50px;
+  margin-left: 25px;
+}
+
+@media (min-width: 500px) {
+  .globalMain > div {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.globalMain > div > ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 500px) {
+  .globalMain > div > ul {
+    margin-right: -25px;
+  }
+}
+
+.globalMain > div > ul > li {
+  width: 120px;
+  height: 120px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+}
+
+.globalMain > div > ul > li:hover {
+  background-color: #f2f2f2;
+}
+
+.globalMain > div > ul > li:hover .logo {
+  background-color: #e3e7e8;
+}
+
+.website .logo {
+  width: 60px;
+  height: 60px;
+  margin-top: 20px;
+  border-radius: 50%;
+  background-color: #f1f3f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  color: #424242;
+  text-transform: uppercase;
+}
+.website .logo:hover {
+}
+
+.website .link {
+}
+
+.website .close {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  display: none;
+  cursor: default;
+}
+
+.globalMain > div > ul > li:hover .close {
+  display: initial;
+}
+
+.addButton {
+}
+
+
+/*# sourceMappingURL=style.803e2c28.css.map */
